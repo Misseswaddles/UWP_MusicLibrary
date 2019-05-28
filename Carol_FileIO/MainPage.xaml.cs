@@ -32,6 +32,11 @@ namespace Carol_FileIO
             Frame.Navigate(typeof(CreatePlaylist));
         }
 
+        private void PlayMusic_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PlayMusic));
+        }
+
 
     }
 }

@@ -1,5 +1,8 @@
 WinMetadata\Windows.winmd
+Assets\Afternoon_Crickets_Long.mp3
+Assets\Itsy_Bitsy_Spider_instrumental.mp3
 Assets\LockScreenLogo.scale-200.png
+Assets\Pop_Goes_The_Weasel.mp3
 Assets\speaker_img.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -11,5 +14,6 @@ App.xbf
 Carol_FileIO.xr.xml
 CreatePlaylist.xbf
 MainPage.xbf
+PlayMusic.xbf
 Properties\Default.rd.xml
 speaker_img.png

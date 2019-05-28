@@ -10,7 +10,28 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Children" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
+      <RootProperty Name="EndPoint" />
+      <RootProperty Name="StartPoint" />
+      <RootProperty Name="GradientStops" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.GradientStop">
+      <RootProperty Name="Color" />
+      <RootProperty Name="Offset" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
@@ -29,6 +50,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="FontFamily" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
@@ -36,11 +60,30 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Background" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.AcrylicBrush">
+      <RootProperty Name="TintColor" />
+    </RootType>
     <RootType FullName="Carol_FileIO.CreatePlaylist" />
     <RootType FullName="Carol_FileIO.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.MediaPlayerElement">
+      <RootProperty Name="Source" />
+      <RootProperty Name="PosterSource" />
+      <RootProperty Name="AutoPlay" />
+      <RootProperty Name="AreTransportControlsEnabled" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Carol_FileIO.PlayMusic" />
   </Roots.RootTypes>
 </Roots>

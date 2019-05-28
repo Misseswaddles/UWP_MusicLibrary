@@ -223,3 +223,8 @@ C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\qual
 C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758804200000000.json
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\PlayMusic.xbf
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PlayMusic.g.i.cs
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PlayMusic.g.cs
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PlayMusic.xaml
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PlayMusic.xbf
