@@ -65,6 +65,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Background" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="UseLayoutRounding" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.AcrylicBrush">
@@ -72,17 +74,23 @@
     </RootType>
     <RootType FullName="Carol_FileIO.CreatePlaylist" />
     <RootType FullName="Carol_FileIO.MainPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Children" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.MediaPlayerElement">
       <RootProperty Name="Source" />
-      <RootProperty Name="PosterSource" />
-      <RootProperty Name="AutoPlay" />
       <RootProperty Name="AreTransportControlsEnabled" />
+      <RootProperty Name="PosterSource" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="AutoPlay" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="Carol_FileIO.Player2" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
+      <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Carol_FileIO.PlayMusic" />
   </Roots.RootTypes>

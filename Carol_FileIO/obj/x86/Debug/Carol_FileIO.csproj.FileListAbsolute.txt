@@ -228,3 +228,8 @@ C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\Play
 C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PlayMusic.g.cs
 C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PlayMusic.xaml
 C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PlayMusic.xbf
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\Player2.g.i.cs
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\Player2.g.cs
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\Player2.xaml
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\Player2.xbf
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\Player2.xbf

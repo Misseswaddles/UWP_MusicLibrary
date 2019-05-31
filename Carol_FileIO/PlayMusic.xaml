@@ -13,14 +13,16 @@
         <StackPanel>
 
             <TextBlock Text="Enjoy the Music!" TextWrapping="Wrap" Height="90" HorizontalAlignment="Center" FontSize="50" FontFamily="Segoe UI"/>
-            <!--Note, we will need to bind source and poster source to the Playlist list-->
-            <MediaPlayerElement x:Name="Media" 
-                                Source="ms-appx:///Assets/Afternoon_Crickets_Long.mp3" 
+            <!--Note, we will need to bind source and poster source to the Playlist list
+            Source="ms-appx:///Assets/Afternoon_Crickets_Long.mp3"-->
+            <GridView >
+                <MediaPlayerElement x:Name="_mediaPlayerElement" 
+                               Source="ms-appx:///Assets/Afternoon_Crickets_Long.mp3"
                                 PosterSource="ms-appx:///Assets/speaker_img.png" AutoPlay="False"
                                 AreTransportControlsEnabled="True" Height="500" Width="436"
                             
                                 HorizontalAlignment="Center"/>
-
+            </GridView>
             <Button Content="Back To Main" Click="PMClickToMain" Margin="0,0,0,0" Height="106" Width="406"
                     HorizontalAlignment="Right"/>
             <!--Commenting out MediaElement to research MediaPlayer -->

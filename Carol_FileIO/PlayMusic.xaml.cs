@@ -5,6 +5,9 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.Core; //used for windows media player
+using Windows.Media.Playback; //used for windows media player
+using Windows.Storage.Pickers;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,12 +26,35 @@ namespace Carol_FileIO
     public sealed partial class PlayMusic : Page
     {
 
-        public PlayMusic()
+
+        //MediaSource _mediaSource = "ms-appx:///Assets/Afternoon_Crickets_Long.mp3";
+        //MediaPlayerElement _mediaPlayer;
+        
+
+
+
+        //Create a new file picker
+        // var filePicker = new Windows.Storage.Pickers.FileOpenPicker();
+
+        //make collection of all video types you want to support
+        //string[] fileTypes = new string[] { ".mp3", ".mp4" };
+
+        //foreach(string fileType in fileTypes)
+        //  {
+        //  filePicker.FileTypeFilter.Add(fileType);
+        // }
+
+        //set picker to start location to the music library
+        // filePicker.SuggestedStartLocation = PickerLocationId.Music;
+
+        public PlayMusic() //works, but I can't 
         {
             this.InitializeComponent();
 
 
         }
+
+   
 
 
         private void PMClickToMain(object sender, RoutedEventArgs e)

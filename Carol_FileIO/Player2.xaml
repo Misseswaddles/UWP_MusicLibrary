@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Carol_FileIO.Player2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Carol_FileIO"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <MediaPlayerElement x:Name="_mediaPlayer"  Source="{x:Bind _mediaSource}" 
+                            AreTransportControlsEnabled="True" PosterSource="{x:Bind _mediaPlayer.PosterSource}"
+                            Margin="0,0,750,500"/>
+        <Button Content="Back To Main" Click="Button_Back_Click" Margin="828,716,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0.5">
+
+        </Button>
+        <Button Content="Select Song" Click="Select_Song_Click" Margin="828,595,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Width="200" d:LayoutRounding="Auto">
+
+        </Button>
+        <Button Content="Select Background Image" Click="Select_Image_Click" Margin="828,320,0,0" VerticalAlignment="Top" Width="200"/>
+
+    </Grid>
+</Page>

@@ -5,8 +5,10 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
+using Windows.Storage;//added for file picker
+using Windows.Storage.Pickers; //added for file picker
+using Windows.UI.Xaml; //added for file picker
+using Windows.UI.Xaml.Controls; //added for file picker
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -22,6 +24,9 @@ namespace Carol_FileIO
     /// </summary>
     public sealed partial class CreatePlaylist : Page
     {
+        private static object audioExtensions;
+
+    
         public CreatePlaylist()
         {
             this.InitializeComponent();
@@ -31,5 +36,20 @@ namespace Carol_FileIO
         {
             Frame.Navigate(typeof(MainPage));
         }
+
+        private void Create_playlist_Click(object sender, RoutedEventArgs e)
+        {
+            var firstPlaylist = new Playlist
+            {
+                sampleFile = "testFile.txt",
+                simpleContent = "Third time is a charm!"
+             };
+
+            Playlist.WriteText(firstPlaylist);
+        }
+
+
+
+
     }
 }

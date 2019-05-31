@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using Windows.Storage.Pickers;
 using Windows.Storage.Streams;
 
 namespace Carol_FileIO
@@ -13,8 +14,11 @@ namespace Carol_FileIO
     /// It is asynchronous, and would be used to store the playlists, and hopefully
     /// User information. 
     /// </summary>
-    internal static class FileHandlerIO
+    static class FileHandlerIO
     {
+
+
+
         /// <summary>
         /// WriteTextFileAsync accepts the playlist filename as a string and will store the 
         /// song object content as a string. Each song object will be a line item
@@ -29,6 +33,7 @@ namespace Carol_FileIO
             var textWriter = new DataWriter(textStream);
             textWriter.WriteString(songContent);
             await textWriter.StoreAsync();
+            //textWriter.Close();
         }
 
         /// <summary>
@@ -50,6 +55,8 @@ namespace Carol_FileIO
             //await textReader.LoadAsync((uint)textLength);
             //return textReader.ReadString((uint)textLength);
         //}
+
+        
 
     }
 }

@@ -22,12 +22,13 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Image Source="speaker_img.png"  HorizontalAlignment="Left" Height="241" Margin="0,15,0,0" VerticalAlignment="Top" Width="223" Stretch="None" Grid.RowSpan="2"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,131.8,0,0" Text="Create Music Here" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Grid.Row="1" Height="79" Width="258"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,131.8,0,0" Text="Create Playlist Here" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Grid.Row="1" Height="79" Width="318"/>
         <Button Content="Return to Main Page" Click="ClickToMain" Margin="0,46.8,0,0" VerticalAlignment="Top" Width="292" Height="98" BorderBrush="#FF3A7EAE" RequestedTheme="Light" HorizontalAlignment="Center" Grid.Row="2">
             <Button.Background>
                 <AcrylicBrush TintColor="#CC7DA8B3"/>
             </Button.Background>
         </Button>
+        <Button Content="Create Playlist" Click="Create_playlist_Click" Margin="0,190.8,0,0" Grid.Row="2" VerticalAlignment="Top" Width="292" HorizontalAlignment="Center"/>
 
     </Grid>
 </Page>

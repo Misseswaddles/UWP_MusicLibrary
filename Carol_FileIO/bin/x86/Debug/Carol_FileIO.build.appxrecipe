@@ -430,6 +430,9 @@
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\Player2.xbf">
+      <PackagePath>Player2.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\PlayMusic.xbf">
       <PackagePath>PlayMusic.xbf</PackagePath>
     </AppxPackagedFile>
