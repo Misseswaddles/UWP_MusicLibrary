@@ -16,7 +16,8 @@
         <StackPanel>
 
         </StackPanel> 
-        <Button Content="Add Content" Click ="Add_Click" Margin="0,434,0,0" VerticalAlignment="Top" Height="170" Width="370" HorizontalAlignment="Center"/>
+        <Button x:ConnectionId='2' Content="Add Content"                    Margin="0,434,0,0" VerticalAlignment="Top" Height="170" Width="370" HorizontalAlignment="Center"/>
        
     </Grid>
 </Page>
+

@@ -1,0 +1,18 @@
+//create a collection list 
+//input a file, and create a collection list. 
+
+Class collection
+
+Xaml page with buttons 
+add, open, delete 
+
+
+Create the dummyplaylist
+Be able to save the three songs that show on the main page to the dummy playlist
+Work on the playlist class
+
+<save title and file path> 
+
+
+The data object is coming from the Song object which has 
+Song object: Album and song
