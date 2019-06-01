@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-31T07:58:45.098</Modified>
+      <Modified>2019-06-01T17:13:50.075</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\Carol_FileIO.exe">
       <PackagePath>entrypoint\Carol_FileIO.exe</PackagePath>
-      <Modified>2019-05-31T07:58:44.848</Modified>
+      <Modified>2019-06-01T17:13:49.427</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -562,23 +562,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-05-31T07:58:44.722</Modified>
+      <Modified>2019-06-01T17:13:49.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\CreatePlaylist.xbf">
       <PackagePath>CreatePlaylist.xbf</PackagePath>
-      <Modified>2019-05-31T07:58:44.725</Modified>
+      <Modified>2019-06-01T17:13:49.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-05-31T07:58:44.725</Modified>
+      <Modified>2019-06-01T17:13:49.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\Player2.xbf">
       <PackagePath>Player2.xbf</PackagePath>
-      <Modified>2019-05-31T07:58:44.725</Modified>
+      <Modified>2019-06-01T17:13:49.277</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\PlayMusic.xbf">
       <PackagePath>PlayMusic.xbf</PackagePath>
-      <Modified>2019-05-31T07:58:44.725</Modified>
+      <Modified>2019-06-01T17:13:49.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -590,7 +590,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\Core\Carol_FileIO.exe">
       <PackagePath>Carol_FileIO.exe</PackagePath>
-      <Modified>2019-05-31T07:58:45.094</Modified>
+      <Modified>2019-06-01T17:13:50.068</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

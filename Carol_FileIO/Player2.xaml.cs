@@ -37,7 +37,7 @@ namespace Carol_FileIO
         {
             this.InitializeComponent();
             MediaPlayerElement _mediaPlayer = new MediaPlayerElement();
-           _posterSource = new BitmapImage(new Uri("ms-appx:///Assets/speaker_img.png"));
+            _posterSource = new BitmapImage(new Uri("ms-appx:///Assets/speaker_img.png"));
            //_mediaPlayer.PosterSource = new BitmapImage(new Uri("ms-appx:///Assets/speaker_img.png"));
             _mediaPlayer.PosterSource = _posterSource;
 
@@ -75,7 +75,9 @@ namespace Carol_FileIO
             if (!(file is null))
             {
                 _mediaSource = MediaSource.CreateFromStorageFile(file);
-                _mediaPlayer.Source = _mediaSource;
+                System.Diagnostics.Debug.WriteLine("_mediaSource : {0} ", _mediaSource.ToString());
+                _mediaPlayer.Source = _mediaSource; //what is this and what are the source requirements to get it to work? 
+                                                    //Can you use a URI? used a hyperlink button tag. 
             }
 
         }
