@@ -41,5 +41,10 @@ namespace Carol_FileIO
         {
             Frame.Navigate(typeof(Player2));
         }
+
+        private void Practice_Data_Binding_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PracticeDataBinding));
+        }
     }
 }

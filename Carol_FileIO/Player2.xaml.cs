@@ -41,6 +41,14 @@ namespace Carol_FileIO
            //_mediaPlayer.PosterSource = new BitmapImage(new Uri("ms-appx:///Assets/speaker_img.png"));
             _mediaPlayer.PosterSource = _posterSource;
 
+           // private string _playListImage { get; set; }
+          //  public string PlayListImage
+      //  {
+      //      get { return _playListImage; }
+      //     set { _playListImage = value; }
+       // }
+            //public string playListImage { get; set => new BitmapImage(new Uri("ms-appx:///Assets/speaker_img.png"))}
+        //string playListImage = new BitmapImage(new Uri("ms-appx:///Assets/speaker_img.png"));
 
         }//Player 2 class
 
@@ -128,7 +136,12 @@ namespace Carol_FileIO
                         new Windows.UI.Xaml.Media.Imaging.BitmapImage();
 
                     bitmapImage.SetSource(fileStream);
+                    System.Diagnostics.Debug.WriteLine("bitmap");
+                    //System.Diagnostics.Debug.WriteLine(bitmapImage.UriSource.ToString());
+                    System.Diagnostics.Debug.WriteLine("bitmap");
                     _mediaPlayer.PosterSource = bitmapImage;
+                    System.Diagnostics.Debug.WriteLine(_mediaPlayer.PosterSource.ToString());
+
                 }
 
             }

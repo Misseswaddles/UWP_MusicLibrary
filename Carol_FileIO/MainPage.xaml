@@ -12,5 +12,6 @@
         <Button  Click="Add_Click" Content="Create Playlist" Margin="0,320,0,0" VerticalAlignment="Top" Height="100" Width="200" HorizontalAlignment="Center" FontSize="20"/>
         <Button Content="Play Music" Click="PlayMusic_Click" Margin="0,596,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="83" Width="200"/>
         <Button Content="MediaPlayer 2" Click="Button_Click" Margin="0,700,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="83" Width="200"/>
+        <Button Content="DataBindingPractice" Click="Practice_Data_Binding_Click" Margin="660,0,0,0" Height="61" Width="207"/>
     </Grid>
 </Page>

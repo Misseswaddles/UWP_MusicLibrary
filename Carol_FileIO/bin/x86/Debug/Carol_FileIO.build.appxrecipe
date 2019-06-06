@@ -382,8 +382,23 @@
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\Assets\Pop_Goes_The_Weasel.mp3">
       <PackagePath>Assets\Pop_Goes_The_Weasel.mp3</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\Assets\City.png">
+      <PackagePath>Assets\City.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\Assets\Ferrari.png">
+      <PackagePath>Assets\Ferrari.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\Assets\Honda.png">
+      <PackagePath>Assets\Honda.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\Assets\Mehran.png">
+      <PackagePath>Assets\Mehran.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\Assets\speaker_img.png">
       <PackagePath>Assets\speaker_img.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\Assets\toyota.png">
+      <PackagePath>Assets\toyota.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -435,6 +450,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\PlayMusic.xbf">
       <PackagePath>PlayMusic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\PracticeDataBinding.xbf">
+      <PackagePath>PracticeDataBinding.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

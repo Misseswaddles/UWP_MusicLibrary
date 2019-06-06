@@ -12,6 +12,7 @@
         <Button x:ConnectionId='2'                    Content="Create Playlist" Margin="0,320,0,0" VerticalAlignment="Top" Height="100" Width="200" HorizontalAlignment="Center" FontSize="20"/>
         <Button x:ConnectionId='3' Content="Play Music"                         Margin="0,596,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="83" Width="200"/>
         <Button x:ConnectionId='4' Content="MediaPlayer 2"                      Margin="0,700,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="83" Width="200"/>
+        <Button x:ConnectionId='5' Content="DataBindingPractice"                                     Margin="660,0,0,0" Height="61" Width="207"/>
     </Grid>
 </Page>
 

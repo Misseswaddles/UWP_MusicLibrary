@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="UWP_MusicApp_Final.CreatePlayList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP_MusicApp_Final"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Button x:ConnectionId='2' Content="Save"                             Margin="142,500,0,0" VerticalAlignment="Top" Height="80" Width="277"/>
+        <TextBlock x:ConnectionId='3' x:Name ="PLname" HorizontalAlignment="Left" Margin="148,184,0,0" Text="Enter Playlist Name" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:ConnectionId='4'  x:Name ="PLnametext" HorizontalAlignment="Left" Margin="372,173,0,0" Text=" " VerticalAlignment="Top"/>
+        <Button x:ConnectionId='5'                          x:Name= "CoverImage" Content="Upload Image" Margin="148,432,0,0" Height="64" Width="117" VerticalAlignment="Top" RenderTransformOrigin="0.496,-0.375" />
+      
+        <ListView x:ConnectionId='6' Name="ListView1" Margin="648,173,568,350" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" >
+            <ListView.ItemTemplate>
+                <DataTemplate                         >
+                    <StackPanel x:ConnectionId='11' Orientation="Horizontal" HorizontalAlignment="Center">
+                        <StackPanel Margin="20,20,0,0">
+                            <TextBlock x:ConnectionId='12' FontSize="10"                           HorizontalAlignment="Left"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+ 
+
+        <StackPanel Margin="281,173,427,240">
+            <GridView x:ConnectionId='7' x:Name="Songs" Height="383" Width="691" >
+                <GridView.ItemTemplate>
+                    <DataTemplate                          >
+                        <StackPanel x:ConnectionId='8' Orientation="Vertical" HorizontalAlignment="Left" BorderBrush="Black" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                            <HyperlinkButton x:ConnectionId='9'                                                              VerticalContentAlignment="Center"  Width="500"/>
+                            <CheckBox x:ConnectionId='10'                                            Margin="0,5,0,0"                                                 />
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </StackPanel>
+
+
+
+
+
+
+    </Grid>
+</Page>
+

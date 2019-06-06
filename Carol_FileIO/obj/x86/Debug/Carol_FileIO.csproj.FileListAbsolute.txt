@@ -233,3 +233,8 @@ C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\Play
 C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\Player2.xaml
 C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\Player2.xbf
 C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\Player2.xbf
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\bin\x86\Debug\PracticeDataBinding.xbf
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PracticeDataBinding.g.i.cs
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PracticeDataBinding.g.cs
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PracticeDataBinding.xaml
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\Carol_FileIO\obj\x86\Debug\PracticeDataBinding.xbf

@@ -1,7 +1,11 @@
 WinMetadata\Windows.winmd
 Assets\Afternoon_Crickets_Long.mp3
+Assets\City.png
+Assets\Ferrari.png
+Assets\Honda.png
 Assets\Itsy_Bitsy_Spider_instrumental.mp3
 Assets\LockScreenLogo.scale-200.png
+Assets\Mehran.png
 Assets\Pop_Goes_The_Weasel.mp3
 Assets\speaker_img.png
 Assets\SplashScreen.scale-200.png
@@ -9,6 +13,7 @@ Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
 Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StoreLogo.png
+Assets\toyota.png
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
 Carol_FileIO.xr.xml
@@ -16,5 +21,6 @@ CreatePlaylist.xbf
 MainPage.xbf
 Player2.xbf
 PlayMusic.xbf
+PracticeDataBinding.xbf
 Properties\Default.rd.xml
 speaker_img.png
