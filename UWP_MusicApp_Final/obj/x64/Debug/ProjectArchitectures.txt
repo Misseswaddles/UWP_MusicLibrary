@@ -1,0 +1,1 @@
+C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\UWP_MusicApp_Final.csproj;x64

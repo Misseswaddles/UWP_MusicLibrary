@@ -29,11 +29,37 @@ namespace UWP_MusicApp_Final
         List<Songs> SongsList = new List<Songs>();
 
         List<Songs> playlist = new List<Songs>(); //added here. 
+
+        List<PlayListObj> PlayListDropdownFiles = new List<PlayListObj>();
+
+        public const string MY_PLAYLIST_FOLDER = "MyPlayList"; //
+
         public MainPage()
         {
             this.InitializeComponent();
 
             GetListOfSongs();
+            GetListOfPlayList();
+        }
+
+        private async void GetListOfPlayList()
+        {
+            var palyListFolder = await KnownFolders.DocumentsLibrary.CreateFolderAsync(MY_PLAYLIST_FOLDER, CreationCollisionOption.OpenIfExists);
+
+            //var palyListFolder = await KnownFolders.DocumentsLibrary.GetFolderAsync("MyPlayList");
+
+            var playlistFiles = await palyListFolder.GetFilesAsync();
+            foreach (var file in playlistFiles)
+            {
+                PlayListObj obj = new PlayListObj();
+                obj.FileName = file.DisplayName;
+                obj.FilePath = file.Path;
+                obj.PlayListNameWithExtn = file.Name;
+
+                PlayListDropdownFiles.Add(obj);
+               // System.Diagnostics.Debug.Print("GetListOfPlayList PlayListFile...................{0} {1}\n", file.Name, file.Path);
+            }
+            PlayListCombo.ItemsSource = PlayListDropdownFiles;
         }
 
         // This method fetches selected songs from UI.
@@ -46,7 +72,7 @@ namespace UWP_MusicApp_Final
                 if (song.IsChecked == true)
                 {
                     myPlaylist.Add(song);
-                    System.Diagnostics.Debug.WriteLine("song selected : {0}  \n", song.TitleName);
+                    System.Diagnostics.Debug.WriteLine("song selected : {0}  \n", song.TitleWithFileExtn);
                 }
             }
             return myPlaylist;
@@ -68,34 +94,31 @@ namespace UWP_MusicApp_Final
                 var prop = file.Properties;
                 var musicProperties = await prop.GetMusicPropertiesAsync();
 
-                SongsList.Add(new Songs() { Title = musicProperties.Title, Artist = musicProperties.Artist, Album = musicProperties.Album, TitleName = file.Name, FilePath = file.Path });
+                if (musicProperties.Title == null || musicProperties.Title == "")
+                {
+                    string _title = file.Name;
+                    musicProperties.Title = _title.Substring(0, _title.LastIndexOf(".") + 1);
+                }
+
+                SongsList.Add(new Songs() { Title = musicProperties.Title, Artist = musicProperties.Artist, Album = musicProperties.Album, TitleWithFileExtn = file.Name, FilePath = file.Path });
                 //Debug.Print("Name : {0}, Path : {1} .  Music props:{2}\n", musicProperties.Title, file.Name, musicProperties.ToString());
                 Debug.WriteLine("Title : {0}, Album : {1},  Title Name:{2}, File Path: {3}, Music Props: {4}\n", musicProperties.Title, musicProperties.Album, file.Name, file.Path, musicProperties.ToString());
-                //OUtput: Note, no title to the song. Need an if statemtn if no title, than take from 
-                //Song element: Album: YouTube Audio Library  TitleName: Afternoon_Crickets_Long.mp3 Title: Afternoon Crickets Long  FilePath: C:\Users\keyro\Music\Afternoon_Crickets_Long.mp3 
-                //Song element: Album: YouTube Audio Library TitleName: Itsy_Bitsy_Spider_instrumental.mp3 Title: Itsy Bitsy Spider(instrumental)  FilePath: C: \Users\keyro\Music\Itsy_Bitsy_Spider_instrumental.mp3
-                // Song element: Album: TitleName: Pop_Goes_The_Weasel.mp3 Title:   FilePath: C: \Users\keyro\Music\Pop_Goes_The_Weasel.mp3
-
             }
 
-            Songs.ItemsSource = SongsList;  //this won't go away until I update the MainPage.xaml
+            // Songs.ItemsSource = SongsList;  //Used for original working gridlist
+            SongsListView.ItemsSource = SongsList;
         }
 
         //This Click method navigates the display to CreatePlayList page 
         private void Create_Playlist_Button_Click(object sender, RoutedEventArgs e)
         {
             List<Songs> playlist = SelectedSongs();
-            //Frame.Navigate(typeof(CreatePlayList), playlist);  //need to implement handling of playlist
+
             Frame.Navigate(typeof(CreatePlayList), playlist);
           
 
         }
 
-        //This click method navigates the display to the PlayPlaylist page
-        private void Play_Playlist_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(PlayPlaylist));
-        }
 
         //This hyperlink button (which is attached to each song object on the main page,
         //will direct the selected song object to MediaPlayerElement to play
@@ -108,6 +131,13 @@ namespace UWP_MusicApp_Final
             var musicFile = await KnownFolders.MusicLibrary.GetFileAsync(musicFileName);
             myMediaPlayerElement.Source = MediaSource.CreateFromStorageFile(musicFile);
 
+        }
+
+        private void Go_Button_Click(object sender, RoutedEventArgs e)
+        {
+            PlayListObj selctedPlaylistName = (PlayListObj)PlayListCombo.SelectedItem;
+            //System.Diagnostics.Debug.Print("selctedPlaylistName------{0}", selctedPlaylistName.DisplayName);
+            Frame.Navigate(typeof(PlayList), selctedPlaylistName.PlayListNameWithExtn);
         }
     }
 }

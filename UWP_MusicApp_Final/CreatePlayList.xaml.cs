@@ -33,7 +33,7 @@ namespace UWP_MusicApp_Final
         public string imagePath { get; set; }
         public string imageName { get; set; }
 
-
+        public const string MY_PLAYLIST_FOLDER = "MyPlayList";
 
 
         public CreatePlayList()
@@ -51,7 +51,7 @@ namespace UWP_MusicApp_Final
             songsLists = e.Parameter as List<Songs>;//Get object while merging
             System.Diagnostics.Debug.WriteLine(songsLists.Count);
             ListView1.ItemsSource = songsLists;
-           Songs.ItemsSource = songsLists;
+          // Songs.ItemsSource = songsLists;
         }
 
 
@@ -65,38 +65,45 @@ namespace UWP_MusicApp_Final
             string filename = PLnametext.Text; 
             if (filename == null || filename == " ")
             {
-                filename = "default";
                 //save filename as default when there is no input from user
+                filename = "default";
             }
+    
             WriteTextFileAsync(filename);
         }
 
-        //Below is to be refactored so Write file is in a fileio
+        //WriteTextFileAsync writes the playlist file to the documents library
+        //If user doesn't add a playlist name, the file is saved as default.txt
+        //The file has a header line which is as follows: Filename, 
         public async void WriteTextFileAsync(string filename)
         {
             string textfilename = filename + ".txt";
-            var storageFolder = KnownFolders.DocumentsLibrary;
-            var textfile = await storageFolder.CreateFileAsync(textfilename, CreationCollisionOption.ReplaceExisting);
+            // var storageFolder = KnownFolders.DocumentsLibrary;
+            //;
+            var palyListFolder = await KnownFolders.DocumentsLibrary.CreateFolderAsync(MY_PLAYLIST_FOLDER, CreationCollisionOption.OpenIfExists);
+            var textfile = await palyListFolder.CreateFileAsync(textfilename, CreationCollisionOption.ReplaceExisting);
             var textStream = await textfile.OpenAsync(FileAccessMode.ReadWrite);
             var textwriter = new DataWriter(textStream);
-            textwriter.WriteString("type=playlist,name=" + filename + "," + imageName + "," + imagePath + "\r");
-            foreach(Songs song in songsLists) //renamed to reflect what was sent from Mainpage. 
+            textwriter.WriteString(filename + "," + imageName + "," + imagePath + "\r"); //removed type and name...
+            foreach (Songs song in songsLists) //renamed to reflect what was sent from Mainpage. 
             {
-                //Changed the name of the properties used. 
-                //textwriter.WriteString("type=song,name=" + song.name + ",artist=default" + song.artist);
-                //Title = musicProperties.Title, Album = musicProperties.Album, TitleName = file.Name, FilePath = file.Path
-                textwriter.WriteString(song.Title + "," + song.Artist + "," + song.Album +"," + song.TitleName + ","+ song.FilePath);
+                if (song.Title == null || song.Title == "")
+                    {
+                    System.Diagnostics.Debug.WriteLine("Title registered as null. Title:{0} TitleName{1} ", song.Title, song.TitleWithFileExtn);
+                    song.Title = song.TitleWithFileExtn;
+                        }
+                textwriter.WriteString(song.Title + "," + song.Artist + "," + song.Album +"," + song.TitleWithFileExtn + ","+ song.FilePath);
                 textwriter.WriteString("\r");
             }
             await textwriter.StoreAsync();
         }
 
-
+        //Click event opens file picker and allows user to select an image 
+        //that will be displayed as playlist image. 
         private async void CoverImage_Click(object sender, RoutedEventArgs e)
         {
             var ImagePicker = new Windows.Storage.Pickers.FileOpenPicker();
             string[] ImageTypes = new string[] { ".jpg", ".bmp", ".png", ".jpeg", ".jpg" };
-            //Add your ImageTypes to the ImageTypeFilter list of ImagePicker.
             foreach (string ImageType in ImageTypes)
             {
                 ImagePicker.FileTypeFilter.Add(ImageType);
