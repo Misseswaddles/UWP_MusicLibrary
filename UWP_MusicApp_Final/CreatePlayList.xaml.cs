@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
@@ -62,7 +63,7 @@ namespace UWP_MusicApp_Final
             //Save the playlist by creating a file with the 
             //playlist name and storing song details.
 
-            string filename = PLnametext.Text; 
+            string filename = PLnametext.Text.Trim(); 
             if (filename == null || filename == " ")
             {
                 //save filename as default when there is no input from user
@@ -70,7 +71,10 @@ namespace UWP_MusicApp_Final
             }
     
             WriteTextFileAsync(filename);
+            Frame.Navigate(typeof(MainPage));
         }
+
+       
 
         //WriteTextFileAsync writes the playlist file to the documents library
         //If user doesn't add a playlist name, the file is saved as default.txt
@@ -84,7 +88,7 @@ namespace UWP_MusicApp_Final
             var textfile = await palyListFolder.CreateFileAsync(textfilename, CreationCollisionOption.ReplaceExisting);
             var textStream = await textfile.OpenAsync(FileAccessMode.ReadWrite);
             var textwriter = new DataWriter(textStream);
-            textwriter.WriteString(filename + "," + imageName + "," + imagePath + "\r"); //removed type and name...
+            textwriter.WriteString(filename.Trim() + "," + filename.Trim() + ".txt," + imageName + "," + imagePath + "\r"); //removed type and name...
             foreach (Songs song in songsLists) //renamed to reflect what was sent from Mainpage. 
             {
                 if (song.Title == null || song.Title == "")
@@ -92,11 +96,13 @@ namespace UWP_MusicApp_Final
                     System.Diagnostics.Debug.WriteLine("Title registered as null. Title:{0} TitleName{1} ", song.Title, song.TitleWithFileExtn);
                     song.Title = song.TitleWithFileExtn;
                         }
-                textwriter.WriteString(song.Title + "," + song.Artist + "," + song.Album +"," + song.TitleWithFileExtn + ","+ song.FilePath);
+                textwriter.WriteString(song.Title + "," + song.TitleWithFileExtn + "," + song.FilePath + "," + song.Album + "," + song.Artist);
                 textwriter.WriteString("\r");
             }
             await textwriter.StoreAsync();
         }
+
+
 
         //Click event opens file picker and allows user to select an image 
         //that will be displayed as playlist image. 

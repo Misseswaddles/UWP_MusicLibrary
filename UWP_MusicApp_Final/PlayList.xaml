@@ -22,7 +22,7 @@
                 <StackPanel Orientation="Horizontal" Height="467"
                         RequestedTheme="Light" Width="1000">
                     <MediaPlayerElement Name="myMediaPlayerElement" Margin="10" AreTransportControlsEnabled="True"
-                                   PosterSource="/Assets/earbudsAndSheetMusic.jpg" Width="606" Height="466" Foreground="#FFA39898"  />
+                                    Width="606" Height="466" Foreground="#FFA39898"  />
                 <StackPanel Orientation="Vertical" Height="405" Width="400">
                     <StackPanel Orientation="Vertical">
                         <Button Content="Delete Songs"  Click="DeleteSongs_Button_Click" />

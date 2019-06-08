@@ -41,27 +41,49 @@ namespace UWP_MusicApp_Final
             GetListOfSongs();
             GetListOfPlayList();
         }
+        private void DeleteSongs_Button_Click(object sender, RoutedEventArgs e)
+        {
 
+            //playslist name is PlayListName
+
+            List<Songs> myPlaylist = new List<Songs>();
+            // Debug.Print("print total number of songs inlist  : {0}", Songslist.Count());
+            foreach (Songs song in SongsList)
+            {
+                if (!song.IsChecked)
+                {
+                    myPlaylist.Add(song);
+                    System.Diagnostics.Debug.WriteLine("song selected : {0} ,{1},{2}, {3} \n", song.TitleWithFileExtn, song.Title, song.FilePath, song.Album);
+
+                }
+            }
+
+            //Need to add feature where we re-write  playlist with the selected song/s removed
+
+            SongsListView.ItemsSource = myPlaylist;
+        }
+        //newer one from 7:32pm. Friday Night. 
         private async void GetListOfPlayList()
         {
             var palyListFolder = await KnownFolders.DocumentsLibrary.CreateFolderAsync(MY_PLAYLIST_FOLDER, CreationCollisionOption.OpenIfExists);
-
-            //var palyListFolder = await KnownFolders.DocumentsLibrary.GetFolderAsync("MyPlayList");
-
             var playlistFiles = await palyListFolder.GetFilesAsync();
+            List<PlayListObj> PlayListDropdownFiles = new List<PlayListObj>();
             foreach (var file in playlistFiles)
             {
-                PlayListObj obj = new PlayListObj();
-                obj.FileName = file.DisplayName;
-                obj.FilePath = file.Path;
-                obj.PlayListNameWithExtn = file.Name;
+                PlayListObj obj = new PlayListObj
+                {
+                    FileName = file.DisplayName,
+                    FilePath = file.Path,
+                    PlayListNameWithExtn = file.Name
+                };
 
                 PlayListDropdownFiles.Add(obj);
-               // System.Diagnostics.Debug.Print("GetListOfPlayList PlayListFile...................{0} {1}\n", file.Name, file.Path);
+                System.Diagnostics.Debug.WriteLine("GetListOfPlayList PlayListFile...................{0} {1}\n", file.Name, file.Path);
             }
             PlayListCombo.ItemsSource = PlayListDropdownFiles;
         }
 
+       
         // This method fetches selected songs from UI.
         private List<Songs> SelectedSongs()
         {
@@ -77,6 +99,7 @@ namespace UWP_MusicApp_Final
             }
             return myPlaylist;
         }
+      
 
         //This method fetches songs from windows My Music library and populates the files information into songs object
         private async void GetListOfSongs()
@@ -133,11 +156,18 @@ namespace UWP_MusicApp_Final
 
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            GetListOfSongs();
+            GetListOfPlayList();
+        }
+
         private void Go_Button_Click(object sender, RoutedEventArgs e)
         {
             PlayListObj selctedPlaylistName = (PlayListObj)PlayListCombo.SelectedItem;
-            //System.Diagnostics.Debug.Print("selctedPlaylistName------{0}", selctedPlaylistName.DisplayName);
+            System.Diagnostics.Debug.WriteLine("selctedPlaylistName------::", selctedPlaylistName.PlayListNameWithExtn);
             Frame.Navigate(typeof(PlayList), selctedPlaylistName.PlayListNameWithExtn);
         }
+       
     }
 }

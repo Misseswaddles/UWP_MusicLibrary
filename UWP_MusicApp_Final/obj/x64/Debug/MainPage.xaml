@@ -29,10 +29,10 @@
           <StackPanel Orientation="Horizontal">
           <ComboBox x:ConnectionId='11'  Name="PlayListCombo" Margin="10,10,10,10" Height="43" Width="171" 
                      ItemsSource="PlayListDropdownFiles"
-                     DisplayMemberPath="FileName"  SelectedItem="FilePath" />
+                     DisplayMemberPath="PlayListNameWithExtn"  SelectedItem="FilePath" />
 
             <Button x:ConnectionId='12' Content="Go"                        />
-            <Button x:ConnectionId='13' Content="Delete Playlist" Margin="10,10,10,10"                        />
+                        <Button x:ConnectionId='13' Content="Delete Playlist" Margin="10,10,10,10"                                 />
           </StackPanel>
 
         </StackPanel>
