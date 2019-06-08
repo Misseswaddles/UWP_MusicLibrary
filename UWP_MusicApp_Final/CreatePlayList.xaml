@@ -14,20 +14,21 @@
         <TextBlock x:Name ="PLname" HorizontalAlignment="Left" Margin="118,463,0,0" Text="Enter Playlist Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
         <TextBox  x:Name ="PLnametext" HorizontalAlignment="Left" Margin="245,467,0,0" Text=" " VerticalAlignment="Top" Height="30" Width="93"/>
         <Button Click="CoverImage_Click" x:Name= "CoverImage" Content="Upload Image" Margin="118,542,0,0" Height="64" Width="117" VerticalAlignment="Top" RenderTransformOrigin="0.496,-0.375" />
-
-        <!--
-        <ListView Name="ListView1" Margin="648,173,568,350" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" >
+        <ListView Name="ListView1" Margin="158,379,1284,564" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" >
+     
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Songs">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <StackPanel Margin="20,20,0,0">
-                            <TextBlock FontSize="10"  Text="{x:Bind Title}" HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock FontSize="10" Text="{x:Bind Title}" HorizontalAlignment="Left"></TextBlock>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
--->
+
+
+        <!--
 
         <Grid  Margin="441,10,429,421">
             <Grid.RowDefinitions>
@@ -44,6 +45,7 @@
                 </GridView.ItemTemplate>
             </GridView>
         </Grid>
+        -->
 
 
 

@@ -48,9 +48,9 @@ namespace UWP_MusicApp_Final
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // Convert paramater to Song objects
-            songsLists = new List<Songs>();
+            //songsLists = new List<Songs>();
             songsLists = e.Parameter as List<Songs>;//Get object while merging
-            System.Diagnostics.Debug.WriteLine(songsLists.Count);
+            System.Diagnostics.Debug.WriteLine("CreatePlaylist songlist {0}, first in list: {1}", songsLists.Count,songsLists[0].Title );
             ListView1.ItemsSource = songsLists;
           // Songs.ItemsSource = songsLists;
         }
@@ -88,7 +88,7 @@ namespace UWP_MusicApp_Final
             var textfile = await palyListFolder.CreateFileAsync(textfilename, CreationCollisionOption.ReplaceExisting);
             var textStream = await textfile.OpenAsync(FileAccessMode.ReadWrite);
             var textwriter = new DataWriter(textStream);
-            textwriter.WriteString(filename.Trim() + "," + filename.Trim() + ".txt," + imageName + "," + imagePath + "\r"); //removed type and name...
+            textwriter.WriteString(filename.Trim() + "," + textfilename+"," + imageName + "," + imagePath + "\r"); //removed type and name...
             foreach (Songs song in songsLists) //renamed to reflect what was sent from Mainpage. 
             {
                 if (song.Title == null || song.Title == "")

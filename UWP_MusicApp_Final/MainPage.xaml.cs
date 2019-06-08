@@ -26,9 +26,9 @@ namespace UWP_MusicApp_Final
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        List<Songs> SongsList = new List<Songs>();
+        
 
-        List<Songs> playlist = new List<Songs>(); //added here. 
+        List<Songs> SongsList = new List<Songs>(); //added here. 
 
         List<PlayListObj> PlayListDropdownFiles = new List<PlayListObj>();
 
@@ -156,12 +156,7 @@ namespace UWP_MusicApp_Final
 
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            GetListOfSongs();
-            GetListOfPlayList();
-        }
-
+        
         private void Go_Button_Click(object sender, RoutedEventArgs e)
         {
             PlayListObj selctedPlaylistName = (PlayListObj)PlayListCombo.SelectedItem;

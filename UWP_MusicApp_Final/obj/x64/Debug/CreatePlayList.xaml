@@ -14,36 +14,38 @@
         <TextBlock x:ConnectionId='3' x:Name ="PLname" HorizontalAlignment="Left" Margin="118,463,0,0" Text="Enter Playlist Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
         <TextBox x:ConnectionId='4'  x:Name ="PLnametext" HorizontalAlignment="Left" Margin="245,467,0,0" Text=" " VerticalAlignment="Top" Height="30" Width="93"/>
         <Button x:ConnectionId='5'                          x:Name= "CoverImage" Content="Upload Image" Margin="118,542,0,0" Height="64" Width="117" VerticalAlignment="Top" RenderTransformOrigin="0.496,-0.375" />
-
-        <!--
-        <ListView Name="ListView1" Margin="648,173,568,350" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" >
+        <ListView x:ConnectionId='6' Name="ListView1" Margin="158,379,1284,564" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" >
+     
             <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:Songs">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <DataTemplate                         >
+                    <StackPanel x:ConnectionId='7' Orientation="Horizontal" HorizontalAlignment="Center">
                         <StackPanel Margin="20,20,0,0">
-                            <TextBlock FontSize="10"  Text="{x:Bind Title}" HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock x:ConnectionId='8' FontSize="10"                       HorizontalAlignment="Left"></TextBlock>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
--->
+
+
+        <!--
 
         <Grid  Margin="441,10,429,421">
             <Grid.RowDefinitions>
                 <RowDefinition Height="329*"/>
                 <RowDefinition Height="240*"/>
             </Grid.RowDefinitions>
-            <GridView x:ConnectionId='6' x:Name="ListView1" Margin="50,10,50,-6" Height="565" Width="530" Grid.RowSpan="2" >
+            <GridView x:Name="ListView1" Margin="50,10,50,-6" Height="565" Width="530" Grid.RowSpan="2" >
                 <GridView.ItemTemplate>
-                    <DataTemplate                          >
-                        <StackPanel x:ConnectionId='7' Orientation="Vertical" HorizontalAlignment="Left" BorderBrush="Black" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Visible">
-                            <HyperlinkButton x:ConnectionId='8'                                                                      VerticalContentAlignment="Center"  Width="500"/>
+                    <DataTemplate x:DataType="local:Songs" >
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" BorderBrush="Black" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                            <HyperlinkButton Tag="{x:Bind Path=TitleWithFileExtn}" Content="{x:Bind Path=Title}"  VerticalContentAlignment="Center"  Width="500"/>
                         </StackPanel>
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>
         </Grid>
+        -->
 
 
 
