@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-RMNB5U8</Machine>
-    <WindowsUser>keyro</WindowsUser>
+    <Machine>DESKTOP-U88B1JS</Machine>
+    <WindowsUser>Selvanayaki</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>aee2fcae-90b5-4359-908d-8051c4c66d54</PackageIdentityName>
     <PackageIdentityPublisher>CN=keyro</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>3CE0DA997716FB6280AEED8F8421F62C7795CDF7A29785591CECBC3D0A49CDAA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>aee2fcae-90b5-4359-908d-8051c4c66d54_1.0.0.0_x64__04zxph6zva4h0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>aee2fcae-90b5-4359-908d-8051c4c66d54_04zxph6zva4h0!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-06-08T20:39:45.725</Modified>
+      <Modified>2019-06-08T23:48:28.217</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\UWP_MusicApp_Final.exe">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\UWP_MusicApp_Final.exe">
       <PackagePath>entrypoint\UWP_MusicApp_Final.exe</PackagePath>
-      <Modified>2019-06-08T20:39:45.491</Modified>
+      <Modified>2019-06-08T23:48:27.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -498,83 +498,83 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-23T08:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\earbudsAndSheetMusic.jpg">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\earbudsAndSheetMusic.jpg">
       <PackagePath>Assets\earbudsAndSheetMusic.jpg</PackagePath>
-      <Modified>2019-06-05T19:48:36.077</Modified>
+      <Modified>2019-06-08T22:20:45.973</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-06-05T19:42:18.606</Modified>
+      <Modified>2019-06-08T22:20:45.995</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2019-05-24T04:46:10.700</Modified>
+      <Modified>2019-06-08T22:20:45.961</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-24T04:46:10.700</Modified>
+      <Modified>2019-06-08T22:20:45.963</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-24T04:46:10.700</Modified>
+      <Modified>2019-06-08T22:20:45.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-24T04:46:10.700</Modified>
+      <Modified>2019-06-08T22:20:45.966</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-24T04:46:10.700</Modified>
+      <Modified>2019-06-08T22:20:45.967</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-24T04:46:10.700</Modified>
+      <Modified>2019-06-08T22:20:45.970</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-24T04:46:10.700</Modified>
+      <Modified>2019-06-08T22:20:45.971</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\UWP_MusicApp_Final.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\UWP_MusicApp_Final.xr.xml">
       <PackagePath>UWP_MusicApp_Final.xr.xml</PackagePath>
-      <Modified>2019-06-08T20:26:54.467</Modified>
+      <Modified>2019-06-08T23:17:52.122</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-06-08T20:39:45.339</Modified>
+      <Modified>2019-06-08T23:48:27.069</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\BlankPage1.xbf">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\BlankPage1.xbf">
       <PackagePath>BlankPage1.xbf</PackagePath>
-      <Modified>2019-06-08T20:39:45.341</Modified>
+      <Modified>2019-06-08T23:48:27.070</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\CreatePlayList.xbf">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\CreatePlayList.xbf">
       <PackagePath>CreatePlayList.xbf</PackagePath>
-      <Modified>2019-06-08T20:39:45.341</Modified>
+      <Modified>2019-06-08T23:48:27.071</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-06-08T20:39:45.341</Modified>
+      <Modified>2019-06-08T23:48:27.072</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\PlayList.xbf">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\PlayList.xbf">
       <PackagePath>PlayList.xbf</PackagePath>
-      <Modified>2019-06-08T20:39:45.341</Modified>
+      <Modified>2019-06-08T23:48:27.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2018-10-23T07:44:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-06-07T18:07:18.737</Modified>
+      <Modified>2019-06-08T22:22:32.908</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\Core\UWP_MusicApp_Final.exe">
+    <AppxPackagedFile Include="C:\Users\Selvanayaki\source\repos\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\Core\UWP_MusicApp_Final.exe">
       <PackagePath>UWP_MusicApp_Final.exe</PackagePath>
-      <Modified>2019-06-08T20:39:45.722</Modified>
+      <Modified>2019-06-08T23:48:28.185</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

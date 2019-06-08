@@ -27970,18 +27970,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\keyro\\.nuget\\packages\\": {},
+    "C:\\Users\\Selvanayaki\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\keyro\\Documents\\Github\\UWP_MusicLibrary\\UWP_MusicApp_Final\\UWP_MusicApp_Final.csproj",
+      "projectUniqueName": "C:\\Users\\Selvanayaki\\Source\\Repos\\UWP_MusicLibrary\\UWP_MusicApp_Final\\UWP_MusicApp_Final.csproj",
       "projectName": "UWP_MusicApp_Final",
-      "projectPath": "C:\\Users\\keyro\\Documents\\Github\\UWP_MusicLibrary\\UWP_MusicApp_Final\\UWP_MusicApp_Final.csproj",
-      "packagesPath": "C:\\Users\\keyro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\keyro\\Documents\\Github\\UWP_MusicLibrary\\UWP_MusicApp_Final\\obj\\",
+      "projectPath": "C:\\Users\\Selvanayaki\\Source\\Repos\\UWP_MusicLibrary\\UWP_MusicApp_Final\\UWP_MusicApp_Final.csproj",
+      "packagesPath": "C:\\Users\\Selvanayaki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Selvanayaki\\Source\\Repos\\UWP_MusicLibrary\\UWP_MusicApp_Final\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -27989,7 +27989,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\keyro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Selvanayaki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

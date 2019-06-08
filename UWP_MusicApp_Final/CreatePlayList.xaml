@@ -10,12 +10,11 @@
 
     <Grid>
 
-        <Button Content="Save" Click="CreatePLSave_Click"  Margin="118,654,0,0" VerticalAlignment="Top" Height="52" Width="117"/>
-        <TextBlock x:Name ="PLname" HorizontalAlignment="Left" Margin="118,463,0,0" Text="Enter Playlist Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
-        <TextBox  x:Name ="PLnametext" HorizontalAlignment="Left" Margin="245,467,0,0" Text=" " VerticalAlignment="Top" Height="30" Width="93"/>
-        <Button Click="CoverImage_Click" x:Name= "CoverImage" Content="Upload Image" Margin="118,542,0,0" Height="64" Width="117" VerticalAlignment="Top" RenderTransformOrigin="0.496,-0.375" />
-        <ListView Name="ListView1" Margin="158,379,1284,564" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" >
-     
+        <Button Content="Save" Click="CreatePLSave_Click"  Margin="157,412,0,0" VerticalAlignment="Top" Height="52" Width="117"/>
+        <TextBlock x:Name ="PLname" HorizontalAlignment="Left" Margin="118,129,0,0" Text="Enter Playlist Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
+        <TextBox  x:Name ="PLnametext" HorizontalAlignment="Left" Margin="245,132,0,0" Text=" " VerticalAlignment="Top" Height="48" Width="78"/>
+        <Button Click="CoverImage_Click" x:Name= "CoverImage" Content="Upload Image" Margin="157,283,0,0" Height="64" Width="117" VerticalAlignment="Top" RenderTransformOrigin="0.496,-0.375" />
+        <ListView Name="ListView1" Margin="466,129,750,458" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" RenderTransformOrigin="1.436,0.161" >
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Songs">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">

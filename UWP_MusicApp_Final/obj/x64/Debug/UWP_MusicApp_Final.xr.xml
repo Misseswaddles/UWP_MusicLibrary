@@ -80,6 +80,7 @@
       <RootProperty Name="FontStyle" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="Height" />
       <RootProperty Name="HeaderTemplate" />
