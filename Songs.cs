@@ -12,5 +12,8 @@ namespace ListMusicFiles
         public string Link { get; set; }
         public string Album { get; set; }
         public string Type { get; set; }
+        public int count { get; set; }
+
     }
+
 }
