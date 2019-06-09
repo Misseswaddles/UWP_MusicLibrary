@@ -8,56 +8,56 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-  <Grid Margin="0,0,10,0.4">
-    <StackPanel Orientation="Vertical" Margin="10,0,10,0" >
-      <StackPanel.Background>
-        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-          <GradientStop Color="#FF7F7F7F" Offset="1"/>
-          <GradientStop Color="White" Offset="0"/>
-          <GradientStop Color="#FFA39C9C" Offset="0.482"/>
-          <GradientStop Color="#FFA29C9C" Offset="0.475"/>
-          <GradientStop Color="#FFFAF8F8" Offset="0.667"/>
-        </LinearGradientBrush>
-      </StackPanel.Background>
-      <StackPanel Orientation="Horizontal" Height="467"
+    <Grid Margin="0,0,10,0.4">
+        <StackPanel Orientation="Vertical" Margin="10,0,10,0" >
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7F7F7F" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFA39C9C" Offset="0.482"/>
+                    <GradientStop Color="#FFA29C9C" Offset="0.475"/>
+                    <GradientStop Color="#FFFAF8F8" Offset="0.667"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <StackPanel Orientation="Horizontal" Height="467"
                         RequestedTheme="Light" Width="1000">
-        <MediaPlayerElement Name="myMediaPlayerElement" Margin="10" AreTransportControlsEnabled="True"
-                                   PosterSource="/Assets/earbudsAndSheetMusic.jpg" Width="606" Height="466" Foreground="#FFA39898"  />
-        <StackPanel Orientation="Vertical" Height="405" Width="400">
-          <Button Content="Create MyplayList" Click="Create_Playlist_Button_Click"  Margin="10,10,10,10" Height="45" Width="165" />
-        <!--  <Button Content="Click_To_Play_Playlist"  Click="Play_Playlist_Click" Margin="10,10,10,10" Height="43" Width="171"/> -->
-          <StackPanel Orientation="Horizontal">
-          <ComboBox  Name="PlayListCombo" Margin="10,10,10,10" Height="43" Width="171" 
+                <MediaPlayerElement x:Name="myMediaPlayerElement" Margin="10" AreTransportControlsEnabled="True"
+                                   PosterSource="/Assets/Paint_Splash.png" Width="606" Height="466" Foreground="#FFA39898"  />
+                <StackPanel Orientation="Vertical" Height="405" Width="400">
+                    <Button Content="Create MyplayList" Click="Create_Playlist_Button_Click"  Margin="10,10,10,10" Height="45" Width="165" />
+                    <!--  <Button Content="Click_To_Play_Playlist"  Click="Play_Playlist_Click" Margin="10,10,10,10" Height="43" Width="171"/> -->
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox  x:Name="PlayListCombo" Margin="10,10,10,10" Height="43" Width="171" 
                      ItemsSource="PlayListDropdownFiles"
                      DisplayMemberPath="PlayListNameWithExtn"  SelectedItem="FilePath" />
 
-            <Button Content="Go" Click="Go_Button_Click"/>
+                        <Button Content="Go" Click="Go_Button_Click"/>
                         <Button Content="Delete Playlist" Margin="10,10,10,10" Click="Delete_MyPlayList_Button_Click"/>
-          </StackPanel>
+                    </StackPanel>
 
-        </StackPanel>
-      </StackPanel>
+                </StackPanel>
+            </StackPanel>
             <ListView x:Name="SongsListView" Height="507"  >
-        <ListView.HeaderTemplate>
-          <DataTemplate>
-            <Grid Padding="12" Background="{ThemeResource SystemBaseLowColor}" Height="63" Width="1472" >
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="400"/>
-                <ColumnDefinition Width="400"/>
-                <ColumnDefinition Width="600"/>
-              </Grid.ColumnDefinitions>
-              <TextBlock Text="Add to Playlist" Style="{ThemeResource CaptionTextBlockStyle}"  HorizontalAlignment="Left" Width="66" />
-              <TextBlock Text="Title" HorizontalAlignment="Left" Margin="114,10,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="45"/>
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid Padding="12" Background="{ThemeResource SystemBaseLowColor}" Height="63" Width="1472" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="400"/>
+                                <ColumnDefinition Width="400"/>
+                                <ColumnDefinition Width="600"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Add to Playlist" Style="{ThemeResource CaptionTextBlockStyle}"  HorizontalAlignment="Left" Width="66" />
+                            <TextBlock Text="Title" HorizontalAlignment="Left" Margin="114,10,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="45"/>
 
 
-              <!--  <TextBlock Text="Title" Style="{ThemeResource CaptionTextBlockStyle}" FontFamily="Segoe UI" HorizontalAlignment="Right" Width="89" Margin="0,4,5,12"/> -->
-              <TextBlock Text="Album" Style="{ThemeResource CaptionTextBlockStyle}" HorizontalAlignment="Left" Margin="389,12,0,9" Width="72" Grid.ColumnSpan="2"/>
-              <TextBlock Text="Play Now" Style="{ThemeResource CaptionTextBlockStyle}" HorizontalAlignment="Right" Margin="0,10,562,0" Width="142" Grid.Column="1" FontFamily="Segoe UI" Height="52" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                            <!--  <TextBlock Text="Title" Style="{ThemeResource CaptionTextBlockStyle}" FontFamily="Segoe UI" HorizontalAlignment="Right" Width="89" Margin="0,4,5,12"/> -->
+                            <TextBlock Text="Album" Style="{ThemeResource CaptionTextBlockStyle}" HorizontalAlignment="Left" Margin="389,12,0,9" Width="72" Grid.ColumnSpan="2"/>
+                            <TextBlock Text="Play Now" Style="{ThemeResource CaptionTextBlockStyle}" HorizontalAlignment="Right" Margin="0,10,562,0" Width="142" Grid.Column="1" FontFamily="Segoe UI" Height="52" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
 
 
-            </Grid>
-          </DataTemplate>
-        </ListView.HeaderTemplate>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
                 <ListView.ItemTemplate>
                     <DataTemplate x:Name="TableDataTemplate" x:DataType="local:Songs">
                         <Grid Height="48" AutomationProperties.Name="{x:Bind TitleWithFileExtn}">
@@ -91,7 +91,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-    </StackPanel>
+        </StackPanel>
 
-  </Grid>
+    </Grid>
 </Page>

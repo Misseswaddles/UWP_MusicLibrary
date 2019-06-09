@@ -45,7 +45,7 @@ namespace UWP_MusicApp_Final
 
             //start bitmap image
             
-            bitmap.UriSource = new Uri(@"ms-appx:///Assets/earbudsAndSheetMusic.jpg");
+            bitmap.UriSource = new Uri(@"ms-appx:///Assets/Paint_Splash.png");
             dynamicImage.Source = bitmap;
         }
 

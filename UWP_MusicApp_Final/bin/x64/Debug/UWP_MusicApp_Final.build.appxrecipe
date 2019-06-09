@@ -376,8 +376,8 @@
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\earbudsAndSheetMusic.jpg">
       <PackagePath>Assets\earbudsAndSheetMusic.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Paint_Splash.png">
+      <PackagePath>Assets\Paint_Splash.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -405,6 +405,9 @@
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\keyro\Documents\Github\UWP_MusicLibrary\UWP_MusicApp_Final\bin\x64\Debug\UWP_MusicApp_Final.xr.xml">
       <PackagePath>UWP_MusicApp_Final.xr.xml</PackagePath>
