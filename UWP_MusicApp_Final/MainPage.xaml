@@ -58,39 +58,38 @@
             </Grid>
           </DataTemplate>
         </ListView.HeaderTemplate>
-        <ListView.ItemTemplate>
-          <DataTemplate x:Name="TableDataTemplate" x:DataType="local:Songs">
-            <Grid Height="48" AutomationProperties.Name="{x:Bind TitleWithFileExtn}">
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
-                <ColumnDefinition Width="300"/>
-                <ColumnDefinition Width="300"/>
-                <ColumnDefinition Width="300"/>
-              </Grid.ColumnDefinitions>
-              <Ellipse Height="32" Width="32" VerticalAlignment="Top">
-                <Ellipse.Fill>
-                  <ImageBrush ImageSource="Placeholder.png"/>
-                </Ellipse.Fill>
-              </Ellipse>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:Name="TableDataTemplate" x:DataType="local:Songs">
+                        <Grid Height="48" AutomationProperties.Name="{x:Bind TitleWithFileExtn}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="300"/>
+                                <ColumnDefinition Width="300"/>
+                                <ColumnDefinition Width="300"/>
+                            </Grid.ColumnDefinitions>
+                            <Ellipse Height="32" Width="32" VerticalAlignment="Top">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="Placeholder.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
 
 
-              <HyperlinkButton Grid.Column="1" Tag="{x:Bind Title}" Content="{x:Bind Title}" Click="HyperlinkButton_ClickAsync" VerticalContentAlignment="Top" 
+                            <HyperlinkButton Grid.Column="1" Tag="{x:Bind Title}" Content="{x:Bind Title}" Click="HyperlinkButton_ClickAsync" VerticalContentAlignment="Top" 
                                    Width="150" Foreground="Black" FontFamily="Arial" FontSize="12"/>
-              <HyperlinkButton Grid.Column="2" Tag="{x:Bind Album}" Content="{x:Bind Album}" Click="HyperlinkButton_ClickAsync" VerticalContentAlignment="Top" 
+                            <HyperlinkButton Grid.Column="2" Tag="{x:Bind Album}" Content="{x:Bind Album}" Click="HyperlinkButton_ClickAsync" VerticalContentAlignment="Top" 
                                     Foreground="Black" FontFamily="Arial" FontSize="12" Width="150"/>
-              <HyperlinkButton Grid.Column="3" Tag="{x:Bind TitleWithFileExtn}" Content="{x:Bind TitleWithFileExtn}" Click="HyperlinkButton_ClickAsync" VerticalContentAlignment="Top"
+                            <HyperlinkButton Grid.Column="3" Tag="{x:Bind TitleWithFileExtn}" Content="{x:Bind TitleWithFileExtn}" Click="HyperlinkButton_ClickAsync" VerticalContentAlignment="Top"
                                    Foreground="Black" FontFamily="Arial" FontSize="12" Width="150"/>
-              <StackPanel Orientation="Horizontal" Margin="6">
+                            <StackPanel Orientation="Horizontal" Margin="6">
 
 
-                <CheckBox Tag="{x:Bind TitleWithFileExtn,Mode=TwoWay}" Margin="0,0,1,0" IsChecked="{x:Bind IsChecked, Mode=TwoWay}"/>
+                                <CheckBox Tag="{x:Bind TitleWithFileExtn,Mode=TwoWay}" Margin="0,0,1,0" IsChecked="{x:Bind IsChecked, Mode=TwoWay}"/>
 
-              </StackPanel>
-            </Grid>
-          </DataTemplate>
-        </ListView.ItemTemplate>
-
-      </ListView>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
     </StackPanel>
 

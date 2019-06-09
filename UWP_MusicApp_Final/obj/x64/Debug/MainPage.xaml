@@ -58,39 +58,38 @@
             </Grid>
           </DataTemplate>
         </ListView.HeaderTemplate>
-        <ListView.ItemTemplate>
-          <DataTemplate x:Name="TableDataTemplate"                         >
-            <Grid x:ConnectionId='4' Height="48"                                                       >
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
-                <ColumnDefinition Width="300"/>
-                <ColumnDefinition Width="300"/>
-                <ColumnDefinition Width="300"/>
-              </Grid.ColumnDefinitions>
-              <Ellipse Height="32" Width="32" VerticalAlignment="Top">
-                <Ellipse.Fill>
-                  <ImageBrush ImageSource="Placeholder.png"/>
-                </Ellipse.Fill>
-              </Ellipse>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:Name="TableDataTemplate"                         >
+                        <Grid x:ConnectionId='4' Height="48"                                                       >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="300"/>
+                                <ColumnDefinition Width="300"/>
+                                <ColumnDefinition Width="300"/>
+                            </Grid.ColumnDefinitions>
+                            <Ellipse Height="32" Width="32" VerticalAlignment="Top">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="Placeholder.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
 
 
-              <HyperlinkButton x:ConnectionId='5' Grid.Column="1"                                                                                  VerticalContentAlignment="Top" 
+                            <HyperlinkButton x:ConnectionId='5' Grid.Column="1"                                                                                  VerticalContentAlignment="Top" 
                                    Width="150" Foreground="Black" FontFamily="Arial" FontSize="12"/>
-              <HyperlinkButton x:ConnectionId='6' Grid.Column="2"                                                                                  VerticalContentAlignment="Top" 
+                            <HyperlinkButton x:ConnectionId='6' Grid.Column="2"                                                                                  VerticalContentAlignment="Top" 
                                     Foreground="Black" FontFamily="Arial" FontSize="12" Width="150"/>
-              <HyperlinkButton x:ConnectionId='7' Grid.Column="3"                                                                                                          VerticalContentAlignment="Top"
+                            <HyperlinkButton x:ConnectionId='7' Grid.Column="3"                                                                                                          VerticalContentAlignment="Top"
                                    Foreground="Black" FontFamily="Arial" FontSize="12" Width="150"/>
-              <StackPanel Orientation="Horizontal" Margin="6">
+                            <StackPanel Orientation="Horizontal" Margin="6">
 
 
-                <CheckBox x:ConnectionId='8'                                              Margin="0,0,1,0"                                            />
+                                <CheckBox x:ConnectionId='8'                                              Margin="0,0,1,0"                                            />
 
-              </StackPanel>
-            </Grid>
-          </DataTemplate>
-        </ListView.ItemTemplate>
-
-      </ListView>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
     </StackPanel>
 
