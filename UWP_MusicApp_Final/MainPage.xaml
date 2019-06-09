@@ -32,15 +32,15 @@
                      DisplayMemberPath="PlayListNameWithExtn"  SelectedItem="FilePath" />
 
             <Button Content="Go" Click="Go_Button_Click"/>
-                        <Button Content="Delete Playlist" Margin="10,10,10,10" Click="DeleteSongs_Button_Click"/>
+                        <Button Content="Delete Playlist" Margin="10,10,10,10" Click="Delete_MyPlayList_Button_Click"/>
           </StackPanel>
 
         </StackPanel>
       </StackPanel>
-      <ListView x:Name="SongsListView" Height="507"  >
+            <ListView x:Name="SongsListView" Height="507"  >
         <ListView.HeaderTemplate>
           <DataTemplate>
-            <Grid Padding="12" Background="{ThemeResource SystemBaseLowColor}" Height="63" Width="1472">
+            <Grid Padding="12" Background="{ThemeResource SystemBaseLowColor}" Height="63" Width="1472" >
               <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="400"/>
                 <ColumnDefinition Width="400"/>

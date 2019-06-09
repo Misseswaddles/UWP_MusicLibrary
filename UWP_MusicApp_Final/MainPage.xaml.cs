@@ -41,27 +41,19 @@ namespace UWP_MusicApp_Final
             GetListOfSongs();
             GetListOfPlayList();
         }
-        private void DeleteSongs_Button_Click(object sender, RoutedEventArgs e)
+
+        private async void Delete_MyPlayList_Button_Click(object sender, RoutedEventArgs e)
         {
+            PlayListObj selctedPlaylistName = (PlayListObj)PlayListCombo.SelectedItem;
 
-            //playslist name is PlayListName
+            var palyListFolder = await KnownFolders.DocumentsLibrary.CreateFolderAsync(MY_PLAYLIST_FOLDER, CreationCollisionOption.OpenIfExists);
+            var playlistFile = await palyListFolder.GetFileAsync(selctedPlaylistName.PlayListNameWithExtn);
+            await playlistFile.DeleteAsync();
 
-            List<Songs> myPlaylist = new List<Songs>();
-            // Debug.Print("print total number of songs inlist  : {0}", Songslist.Count());
-            foreach (Songs song in SongsList)
-            {
-                if (!song.IsChecked)
-                {
-                    myPlaylist.Add(song);
-                    System.Diagnostics.Debug.WriteLine("song selected : {0} ,{1},{2}, {3} \n", song.TitleWithFileExtn, song.Title, song.FilePath, song.Album);
-
-                }
-            }
-
-            //Need to add feature where we re-write  playlist with the selected song/s removed
-
-            SongsListView.ItemsSource = myPlaylist;
+            GetListOfPlayList();
         }
+
+
         //newer one from 7:32pm. Friday Night. 
         private async void GetListOfPlayList()
         {

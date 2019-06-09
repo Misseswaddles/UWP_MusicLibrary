@@ -20,7 +20,10 @@
                 </LinearGradientBrush>
             </StackPanel.Background>
             <StackPanel Width="855" Height="338" Padding="0,0,0,20" Margin="0,0,0,20">
-                <Button Click="CoverImage_Click" x:Name= "CoverImage" Content="Upload Image" HorizontalAlignment="Right" Margin="25,100,5,10" Height="65" Width="117" />
+                <StackPanel Orientation="Horizontal">
+                    <Image x:DefaultBindMode="TwoWay" x:Name="dynamicImage"  Height="154" Width="296" />
+                    <Button Click="CoverImage_Click" x:Name= "CoverImage" Content="Upload Image" Margin="25,100,5,10" Height="65" Width="117" />
+                </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="420">
                     <TextBlock x:Name ="PLname" Margin="15" Text="Enter Playlist Name" TextWrapping="Wrap" VerticalAlignment="Center" Width="129" Height="45"/>
                     <TextBox  x:Name ="PLnametext" HorizontalAlignment="Left" Margin="20" Text=" " Height="48" Width="148"/>
@@ -80,20 +83,9 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <!--
-                <ListView Name="ListView1" Margin="50,50,50,50" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" RenderTransformOrigin="0.508,0.482" Height="249" Width="760" HorizontalAlignment="Center" >
-                    <ListView.ItemTemplate>
-                        <DataTemplate x:DataType="local:Songs">
-                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
-                                <StackPanel Margin="20,20,0,0">
-                                    <TextBlock Margin="10" FontSize="20" Text="{x:Bind Title}" HorizontalAlignment="Left"></TextBlock>
-                                </StackPanel>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                -->
+
             </StackPanel>
+
         </StackPanel>
     </Grid>
 </Page>

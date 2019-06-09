@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -35,11 +36,17 @@ namespace UWP_MusicApp_Final
         public string imageName { get; set; }
 
         public const string MY_PLAYLIST_FOLDER = "MyPlayList";
-
+        public BitmapImage bitmap = new BitmapImage();
 
         public CreatePlayList()
         {
+            
             this.InitializeComponent();
+
+            //start bitmap image
+            
+            bitmap.UriSource = new Uri(@"ms-appx:///Assets/earbudsAndSheetMusic.jpg");
+            dynamicImage.Source = bitmap;
         }
 
         /**
@@ -119,11 +126,30 @@ namespace UWP_MusicApp_Final
             StorageFile file = await ImagePicker.PickSingleFileAsync();
             imagePath = file.Path;
             imageName = file.Name;
+            ChangeImageDynamicallyAsync(imageName);
         }
 
-        private void ListView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void ChangeImageDynamicallyAsync(string imageName)
         {
+            System.Diagnostics.Debug.WriteLine("dynamicImage.Source is : {0}", dynamicImage.Source);
+            System.Diagnostics.Debug.WriteLine("ImageSource should be a file path: {0}", imageName);
+ 
+            if (imageName != null || imageName.Trim() != "")
+            {
 
+                var file = await KnownFolders.PicturesLibrary.GetFileAsync(imageName);
+
+                using (Windows.Storage.Streams.IRandomAccessStream fileStream =
+                await file.OpenAsync(Windows.Storage.FileAccessMode.Read))
+                {
+
+                    bitmap.SetSource(fileStream);
+                    dynamicImage.Source = bitmap;
+                }
+
+            } 
         }
+
+
     }
 }

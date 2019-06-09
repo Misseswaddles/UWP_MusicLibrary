@@ -32,15 +32,15 @@
                      DisplayMemberPath="PlayListNameWithExtn"  SelectedItem="FilePath" />
 
             <Button x:ConnectionId='12' Content="Go"                        />
-                        <Button x:ConnectionId='13' Content="Delete Playlist" Margin="10,10,10,10"                                 />
+                        <Button x:ConnectionId='13' Content="Delete Playlist" Margin="10,10,10,10"                                       />
           </StackPanel>
 
         </StackPanel>
       </StackPanel>
-      <ListView x:ConnectionId='2' x:Name="SongsListView" Height="507"  >
+            <ListView x:ConnectionId='2' x:Name="SongsListView" Height="507"  >
         <ListView.HeaderTemplate>
           <DataTemplate>
-            <Grid Padding="12" Background="{ThemeResource SystemBaseLowColor}" Height="63" Width="1472">
+            <Grid Padding="12" Background="{ThemeResource SystemBaseLowColor}" Height="63" Width="1472" >
               <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="400"/>
                 <ColumnDefinition Width="400"/>
