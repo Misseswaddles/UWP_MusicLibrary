@@ -9,47 +9,38 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
-        <Button Content="Save" Click="CreatePLSave_Click"  Margin="157,412,0,0" VerticalAlignment="Top" Height="52" Width="117"/>
-        <TextBlock x:Name ="PLname" HorizontalAlignment="Left" Margin="118,129,0,0" Text="Enter Playlist Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
-        <TextBox  x:Name ="PLnametext" HorizontalAlignment="Left" Margin="245,132,0,0" Text=" " VerticalAlignment="Top" Height="48" Width="78"/>
-        <Button Click="CoverImage_Click" x:Name= "CoverImage" Content="Upload Image" Margin="157,283,0,0" Height="64" Width="117" VerticalAlignment="Top" RenderTransformOrigin="0.496,-0.375" />
-        <ListView Name="ListView1" Margin="466,129,750,458" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" RenderTransformOrigin="1.436,0.161" >
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:Songs">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <StackPanel Margin="20,20,0,0">
-                            <TextBlock FontSize="10" Text="{x:Bind Title}" HorizontalAlignment="Left"></TextBlock>
-                        </StackPanel>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
-
-        <!--
-
-        <Grid  Margin="441,10,429,421">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="329*"/>
-                <RowDefinition Height="240*"/>
-            </Grid.RowDefinitions>
-            <GridView x:Name="ListView1" Margin="50,10,50,-6" Height="565" Width="530" Grid.RowSpan="2" >
-                <GridView.ItemTemplate>
-                    <DataTemplate x:DataType="local:Songs" >
-                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" BorderBrush="Black" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Visible">
-                            <HyperlinkButton Tag="{x:Bind Path=TitleWithFileExtn}" Content="{x:Bind Path=Title}"  VerticalContentAlignment="Center"  Width="500"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </GridView.ItemTemplate>
-            </GridView>
-        </Grid>
-        -->
-
-
-
-
-
-
+        <StackPanel >
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7F7F7F" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFA39C9C" Offset="0.482"/>
+                    <GradientStop Color="#FFA29C9C" Offset="0.475"/>
+                    <GradientStop Color="#FFFAF8F8" Offset="0.667"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <StackPanel Width="855" Height="338" Padding="0,0,0,20" Margin="0,0,0,20">
+                <Button Click="CoverImage_Click" x:Name= "CoverImage" Content="Upload Image" HorizontalAlignment="Right" Margin="25,100,5,10" Height="65" Width="117" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="420">
+                    <TextBlock x:Name ="PLname" Margin="15" Text="Enter Playlist Name" TextWrapping="Wrap" VerticalAlignment="Center" Width="129" Height="45"/>
+                    <TextBox  x:Name ="PLnametext" HorizontalAlignment="Left" Margin="20" Text=" " Height="48" Width="148"/>
+                </StackPanel>
+                <Button Content="Save" Click="CreatePLSave_Click" HorizontalAlignment="Center" Margin="10" Height="52" Width="182"/>
+            </StackPanel>
+            <StackPanel Width="852">
+                <TextBlock Text="Songs Selected for Playlist" TextAlignment="Center" Height="30" FontSize="20" FontWeight="Bold" TextDecorations="Underline"/>
+                <ListView Name="ListView1" Margin="50,50,50,50" BorderBrush="{ThemeResource SystemBaseHighColor}" Background="{ThemeResource SystemChromeMediumColor}" FontStyle="Normal" FontWeight="SemiBold" RequestedTheme="Light" RenderTransformOrigin="0.508,0.482" Height="249" Width="760" HorizontalAlignment="Center" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="local:Songs">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <StackPanel Margin="20,20,0,0">
+                                    <TextBlock Margin="10" FontSize="20" Text="{x:Bind Title}" HorizontalAlignment="Left"></TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

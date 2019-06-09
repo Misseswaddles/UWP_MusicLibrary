@@ -120,5 +120,10 @@ namespace UWP_MusicApp_Final
             imagePath = file.Path;
             imageName = file.Name;
         }
+
+        private void ListView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

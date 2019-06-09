@@ -40,7 +40,7 @@
                                 <ColumnDefinition Width="400"/>
                                 <ColumnDefinition Width="600"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="Add to Playlist" Style="{ThemeResource CaptionTextBlockStyle}"  HorizontalAlignment="Left" Width="66" />
+                            <TextBlock Text="Delete from Playlist" Style="{ThemeResource CaptionTextBlockStyle}"  HorizontalAlignment="Left" Width="66" />
                             <TextBlock Text="Title" HorizontalAlignment="Left" Margin="114,10,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Height="45"/>
 
                             <TextBlock Text="Album" Style="{ThemeResource CaptionTextBlockStyle}" HorizontalAlignment="Left" Margin="389,12,0,9" Width="72" Grid.ColumnSpan="2"/>
