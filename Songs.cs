@@ -14,6 +14,8 @@ namespace ListMusicFiles
         public string Type { get; set; }
         public int count { get; set; }
 
+
+        public string Deleteableobject { get; set; }
     }
 
 }
