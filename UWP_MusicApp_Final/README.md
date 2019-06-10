@@ -4,7 +4,7 @@ This README is designed to give you a high level overview of the applications ca
 This was also written while listening to playlists created by the application. ;-)
 
 **Overview**
-This application was created in Visual Studio 2019 with Universal Windows as the target.
+This Universal Windows application was created in C# using Visual Studio 2019 with Universal Windows as the target.
 The Target version is Windows 10, version 1809 (build 17763)
 The Minimum version is Windows 10 Creaters Update (build 15063)
 
@@ -32,14 +32,14 @@ Note: We did not investigate the copyright surrounding the image, as this applic
 Note: A nice to have for future features is for the media player to go through the music 
 
 To Make a Playlist from MainPage:
-1.User can select music that will be added to a playlist by clicking check box in left column. 
-2.User than can click "Create Playlist" Button on top left to navigate to Create Playlist page.
+1. User can select music that will be added to a playlist by clicking check box in left column. 
+2. User than can click "Create Playlist" Button on top left to navigate to Create Playlist page.
 
 **Create Playlist Features**
-1.User is able to see the list of songs selected for a playlist
-2.User can choose an image other than default to display on their playlist 
-3.User enters a name for the text file and clicks save
-4.save redirects user back to mainpage. Theplaylist name.txt is now shown in the playlist combo box
+1. User is able to see the list of songs selected for a playlist
+2. User can choose an image other than default to display on their playlist 
+3. User enters a name for the text file and clicks save
+4. save redirects user back to mainpage. Theplaylist name.txt is now shown in the playlist combo box
 
 Restriction: Application will only accept images from top level Pictures directory on local machine.
 Choosing an image other than in this location causes a file not found error. We were blocked finding a way to develop an application
@@ -47,7 +47,14 @@ That was allowed to search and pull from the entire directory structure.
 Note: If user attempts to select an image out of the top level picture directory a FileNotFoundError is thrown. 
 This is handled by our system by keeping the default image in place. Future revisions will fix this bug.
 
+**PlayPlaylist Features**
+1. User is able to see the list of songs for the playlist
+2. User has similar playlist functionality as on the main page--play by clicking "play now"
+3. User can delete songs by selecting check box on left hand side and clicking delete button.
+4. User can navigate back to the main page.
 
 
+Remaining room for growth:
+1. refactoring the code--
 
 
