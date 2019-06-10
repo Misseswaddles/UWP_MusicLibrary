@@ -21,12 +21,12 @@ Application opens to main page
 Any music contained in top directory in Music Library is displayed alphabetically by title.
 
 To Play Music:
-1.User can select any of the music to play by clicking the title under the column "Play Now"
-2.User can click play on media player. Autoplay is set to false. 
-3.We have used the Media Player Element and have enabled most of its basic features. 
-4.The media players default image is set to an image captured on my laptop screen and is stored in assets folder in program.
-5.Once user has created a playlist they will be able to select that playlist in the combobox on RHS. 
-6.The user must click "Go" in order to navigate to the Playlist page. 
+1. User can select any of the music to play by clicking the title under the column "Play Now"
+2. User can click play on media player. Autoplay is set to false. 
+3. We have used the Media Player Element and have enabled most of its basic features. 
+4. The media players default image is set to an image captured on my laptop screen and is stored in assets folder in program.
+5. Once user has created a playlist they will be able to select that playlist in the combobox on RHS. 
+6. The user must click "Go" in order to navigate to the Playlist page. 
 
 Note: We did not investigate the copyright surrounding the image, as this application is for private use only. 
 Note: A nice to have for future features is for the media player to go through the music 
