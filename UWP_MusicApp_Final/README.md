@@ -54,7 +54,9 @@ This is handled by our system by keeping the default image in place. Future revi
 4. User can navigate back to the main page.
 
 
-Remaining room for growth:
-1. refactoring the code--
+**Room for growth:**
+1. refactoring code redundancy. 
+2. Improving commenting structure. 
+3. Improving UI
 
 
