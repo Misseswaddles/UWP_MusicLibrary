@@ -72,19 +72,27 @@ namespace UWP_MusicApp_Final
             }
             else
             {
-
-                var file = await KnownFolders.PicturesLibrary.GetFileAsync(imageName);
-
-                using (Windows.Storage.Streams.IRandomAccessStream fileStream =
-                await file.OpenAsync(Windows.Storage.FileAccessMode.Read))
+                try
                 {
-                    
-                    bitmapImage.SetSource(fileStream);
-                    myMediaPlayerElement.PosterSource = bitmapImage;
+                    var file = await KnownFolders.PicturesLibrary.GetFileAsync(imageName);
+
+                    using (Windows.Storage.Streams.IRandomAccessStream fileStream =
+                    await file.OpenAsync(Windows.Storage.FileAccessMode.Read))
+                    {
+
+                        bitmapImage.SetSource(fileStream);
+                        myMediaPlayerElement.PosterSource = bitmapImage;
+                    }
+                }
+                catch (FileNotFoundException e)
+                {
+                    System.Diagnostics.Debug.WriteLine("Sorry, you have to select from top Level Pictures only. File not found by system {0}", e);
+                    var defaultSource = new BitmapImage(new Uri("ms-appx:///Assets/Paint_Splash.png"));
+                    myMediaPlayerElement.PosterSource = defaultSource;
                 }
             }
-          
         }
+          
 
         //New as of 6/7 from slack.
         private async void getSongsListFromFile(string PlayListFileName)

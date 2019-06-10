@@ -126,6 +126,9 @@ namespace UWP_MusicApp_Final
             StorageFile file = await ImagePicker.PickSingleFileAsync();
             imagePath = file.Path;
             imageName = file.Name;
+            System.Diagnostics.Debug.WriteLine("dynamicImage.Source is : {0}", dynamicImage.Source);
+            System.Diagnostics.Debug.WriteLine("ImageSource should be a file path: {0}", imageName);
+
             ChangeImageDynamicallyAsync(imageName);
         }
 
@@ -136,17 +139,23 @@ namespace UWP_MusicApp_Final
  
             if (imageName != null || imageName.Trim() != "")
             {
-
-                var file = await KnownFolders.PicturesLibrary.GetFileAsync(imageName);
-
-                using (Windows.Storage.Streams.IRandomAccessStream fileStream =
-                await file.OpenAsync(Windows.Storage.FileAccessMode.Read))
+                try
                 {
+                    var file = await KnownFolders.PicturesLibrary.GetFileAsync(imageName);
 
-                    bitmap.SetSource(fileStream);
-                    dynamicImage.Source = bitmap;
+                    using (Windows.Storage.Streams.IRandomAccessStream fileStream =
+                    await file.OpenAsync(Windows.Storage.FileAccessMode.Read))
+                    {
+
+                        bitmap.SetSource(fileStream);
+                        dynamicImage.Source = bitmap;
+                    }
                 }
+                catch (FileNotFoundException e)
+                {
+                    System.Diagnostics.Debug.WriteLine("You have to select from top level of Pictures folder only: {0}", e);
 
+                }
             } 
         }
 

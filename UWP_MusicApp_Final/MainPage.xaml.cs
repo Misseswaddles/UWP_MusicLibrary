@@ -54,7 +54,6 @@ namespace UWP_MusicApp_Final
         }
 
 
-        //newer one from 7:32pm. Friday Night. 
         private async void GetListOfPlayList()
         {
             var palyListFolder = await KnownFolders.DocumentsLibrary.CreateFolderAsync(MY_PLAYLIST_FOLDER, CreationCollisionOption.OpenIfExists);
