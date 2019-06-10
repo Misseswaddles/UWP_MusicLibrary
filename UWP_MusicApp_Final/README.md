@@ -50,9 +50,10 @@ This is handled by our system by keeping the default image in place. Future revi
 **PlayPlaylist Features**
 1. User is able to see the list of songs for the playlist
 2. User has similar playlist functionality as on the main page--play by clicking "play now"
-3. User can delete songs by selecting check box on left hand side and clicking delete button.
+3. User can delete songs by selecting check box on left hand side and clicking delete button. (**see note below**)
 4. User can navigate back to the main page.
 
+Note: Although the user is able to delete the songs on the UI, the songs are not actually deleted from the playlist text file. This means that once the playlist reloads the "deleted songs" will reappear. I wasn't able to get to completing this feature. The fix would be to store the songs selected for deletion, then re-write the playlist file omitting the songs selected for deletion. 
 
 **Room for growth:**
 1. Refactoring code redundancy. 
