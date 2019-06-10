@@ -33,13 +33,13 @@ Note: A nice to have for future features is for the media player to go through t
 
 To Make a Playlist from MainPage:
 1. User can select music that will be added to a playlist by clicking check box in left column. 
-2. User than can click "Create Playlist" Button on top left to navigate to Create Playlist page.
+2. User then can click "Create Playlist" Button on top left to navigate to Create Playlist page.
 
 **Create Playlist Features**
-1. User is able to see the list of songs selected for a playlist
-2. User can choose an image other than default to display on their playlist 
+1. User is able to see the list of songs selected for a playlist from main page
+2. User can choose an image other than default to set as coverimage for their mediaplayer on playlist page
 3. User enters a name for the text file and clicks save
-4. save redirects user back to mainpage. Theplaylist name.txt is now shown in the playlist combo box
+4. Save redirects user back to mainpage. Theplaylist "PlayListname.txt" is now shown in the playlist combo box
 
 Restriction: Application will only accept images from top level Pictures directory on local machine.
 Choosing an image other than in this location causes a file not found error. We were blocked finding a way to develop an application
@@ -55,7 +55,7 @@ This is handled by our system by keeping the default image in place. Future revi
 
 
 **Room for growth:**
-1. refactoring code redundancy. 
+1. Refactoring code redundancy. 
 2. Improving commenting structure. 
 3. Improving UI
 
