@@ -5,6 +5,11 @@ The UWP_MusicLibray is an empty Universal Windows application created in Visual 
 Note: This document is written in Markdown. For a quick cheet sheet on how to make your comments display correctly go here:
 [Link to Markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 
+Overview: <br/>
+This README is just a general overview of the repository. The project submission is located in the UWP_MusicAPP_Final folder. There is a separate README in there that gives you a quick overview of our MusicAPP, its capabilities and its limitations.
+
+Below was an overview created by misseswaddles to outline the plan for manual testing. The process underscored the need for putting unit tests and integration tests in place for our next group project. 
+
 <br/>
 <br/>
 
